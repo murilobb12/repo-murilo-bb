@@ -1,0 +1,5 @@
+br\com\murilo\model\Usuario.class
+META-INF\panache-archive.marker
+br\com\murilo\dao\UsuarioDAO.class
+br\com\murilo\repository\UsuarioRepository.class
+br\com\murilo\rest\UsuarioResource.class
