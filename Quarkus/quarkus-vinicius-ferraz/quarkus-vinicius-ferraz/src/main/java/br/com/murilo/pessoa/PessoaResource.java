@@ -1,8 +1,6 @@
-package br.com.murilo.resource;
+package br.com.murilo.pessoa;
 
-import br.com.murilo.model.Pessoa;
 import br.com.murilo.model.dto.IncluirPessoaDTO;
-import br.com.murilo.service.PessoaService;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;

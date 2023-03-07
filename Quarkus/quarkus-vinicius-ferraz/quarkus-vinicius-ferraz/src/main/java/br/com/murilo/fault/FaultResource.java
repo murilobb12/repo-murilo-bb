@@ -1,4 +1,4 @@
-package br.com.murilo.resource;
+package br.com.murilo.fault;
 
 
 

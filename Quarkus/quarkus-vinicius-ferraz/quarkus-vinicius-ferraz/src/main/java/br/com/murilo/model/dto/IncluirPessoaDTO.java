@@ -1,6 +1,6 @@
 package br.com.murilo.model.dto;
 
-import br.com.murilo.model.Pessoa;
+import br.com.murilo.pessoa.Pessoa;
 
 public class IncluirPessoaDTO {
 

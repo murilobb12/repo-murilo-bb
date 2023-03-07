@@ -1,15 +1,14 @@
-package br.com.murilo.service;
+package br.com.murilo.pessoa;
 
-import br.com.murilo.model.Pessoa;
+import br.com.murilo.pessoa.Pessoa;
 import br.com.murilo.model.dto.IncluirPessoaDTO;
-import br.com.murilo.repository.PessoaRepository;
+import br.com.murilo.pessoa.PessoaRepository;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.transaction.Transactional;
 import javax.ws.rs.NotFoundException;
-import java.util.ArrayList;
 import java.util.List;
 
 @ApplicationScoped

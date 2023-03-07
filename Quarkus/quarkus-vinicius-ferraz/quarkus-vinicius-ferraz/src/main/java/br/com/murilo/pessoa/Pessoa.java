@@ -1,4 +1,4 @@
-package br.com.murilo.model;
+package br.com.murilo.pessoa;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;

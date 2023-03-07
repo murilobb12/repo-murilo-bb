@@ -1,4 +1,4 @@
-package br.com.murilo.model;
+package br.com.murilo.produtos;
 
 import lombok.Data;
 
