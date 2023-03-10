@@ -5,10 +5,11 @@ import lombok.Data;
 @Data
 public class OcorrenciaValidacaoDTO {
 
-    public String idObjetoValidado;
-
     public String mensagem;
 
     public String siglaSeveridade;
+
+    public String idObjetoValidado;
+
 
 }

@@ -2,6 +2,7 @@ package br.com.murilo.service;
 
 import br.com.murilo.model.bndes.SolicitacaoHonraConsultaDTO;
 import br.com.murilo.model.bndes.SolicitacaoRetorno;
+import br.com.murilo.model.bndes.SolicitaoRetorno202DTO;
 import br.com.murilo.restClient.BndesProxy;
 import br.com.murilo.token.GerarToken;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
@@ -33,7 +34,7 @@ public class BndesService {
 
     }
 
-    public SolicitacaoRetorno listarOperacao(Long idOperacao) throws IOException, InterruptedException {
+    public SolicitaoRetorno202DTO listarOperacao(Long idOperacao) throws IOException, InterruptedException {
 
 
         try {

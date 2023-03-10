@@ -1,0 +1,15 @@
+br\com\murilo\model\bndes\SolicitacaoHonraConsultaDTO.class
+br\com\murilo\service\BndesService.class
+br\com\murilo\model\bndes\EntradaLoteSolicitacoesHonraDTO.class
+br\com\murilo\model\bndes\SolicitacaoRetorno.class
+br\com\murilo\model\bndes\OcorrenciaValidacaoDTO.class
+br\com\murilo\resource\BndesResource.class
+br\com\murilo\model\bndes\SolicitaoRetorno202DTO.class
+br\com\murilo\token\GerarToken.class
+br\com\murilo\restClient\BndesProxy.class
+br\com\murilo\model\bndes\Erros.class
+br\com\murilo\model\bndes\SolicitacaoServico.class
+br\com\murilo\model\bndes\AmortizacaoEnvioDTO.class
+br\com\murilo\model\bndes\EstadoDTO.class
+br\com\murilo\model\bndes\Status.class
+br\com\murilo\model\bndes\SolicitacaoHonraEnvioDTO.class

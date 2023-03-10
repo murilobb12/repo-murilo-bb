@@ -3,6 +3,7 @@ package br.com.murilo.restClient;
 import br.com.murilo.model.bndes.EntradaLoteSolicitacoesHonraDTO;
 import br.com.murilo.model.bndes.SolicitacaoHonraConsultaDTO;
 import br.com.murilo.model.bndes.SolicitacaoRetorno;
+import br.com.murilo.model.bndes.SolicitaoRetorno202DTO;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
 import javax.ws.rs.*;
@@ -19,7 +20,7 @@ public interface BndesProxy {
 
     @GET
     @Path("/{idSolicitacao}")
-    public SolicitacaoRetorno listarSolicitacao(@HeaderParam("Authorization") String token, @PathParam("idSolicitacao") Long idSolicitacao);
+    public SolicitaoRetorno202DTO listarSolicitacao(@HeaderParam("Authorization") String token, @PathParam("idSolicitacao") Long idSolicitacao);
 
     @POST
     public SolicitacaoRetorno inserirSolicitacao(@HeaderParam("Authorization") String token, EntradaLoteSolicitacoesHonraDTO entradaLoteSolicitacoesHonraDTO);
