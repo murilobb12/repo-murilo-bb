@@ -19,7 +19,7 @@ public class FrutaResource {
 
     @POST
     public Response insertFruit(Fruta fruta){
-        return Response.status(Response.Status.OK.getStatusCode()).entity(service.insertFruit(fruta)).build();
+        return Response.status(Response.Status.CREATED.getStatusCode()).entity(service.insertFruit(fruta)).build();
     }
 
     @GET
