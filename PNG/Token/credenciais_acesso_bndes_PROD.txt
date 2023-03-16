@@ -1,5 +1,5 @@
-Consumer Key 
-FjL3ZS3B0GN9aCFYAWwaKMI_OGYa
+Consumer Key  (Client ID)
+bEokFihKNSRRYZ6OTJCdtZ1f6i0a
 
-Consumer Secret 
-vqHlnTneKpErqARt16zMzxUeGfwa
+Consumer Secret (Cliente Secret)
+OITugnEKtSEs3zfkpCGd0OAAJMAa
