@@ -23,21 +23,33 @@ public class App {
 
         operacoes.stream().forEach(op -> listaCodigos.add(op.codigoIdentificador));
     
-        SolicitacaoHonraEnvioDTO solicitacao = new SolicitacaoHonraEnvioDTO();
+        List<SolicitacaoHonraEnvioDTO> solicitacoes;
 
         AmortizacaoEnvioDTO[] amortizacao;
 
+        amortizacao = new AmortizacaoEnvioDTO[50];
+
+        amortizacao[0] = new AmortizacaoEnvioDTO();
+        amortizacao[0].setDataVencimento("2020");
+        amortizacao[0].setValorDevido(200.00);
+        amortizacao[0].setValorRecebido(100.00);
+        amortizacao[1] = new AmortizacaoEnvioDTO();
+        amortizacao[1].setDataVencimento("2021");
+        amortizacao[1].setValorDevido(200.00);
+        amortizacao[1].setValorRecebido(100.00);
+        
+        
+
         for (Operacoes op : operacoes) {
+            SolicitacaoHonraEnvioDTO solicitacaoHonraEnvioDTO = new SolicitacaoHonraEnvioDTO();
+            System.out.println(op.codigoIdentificador);
 
             solicitacao.setIdOperacaoAgenteCreditoLivre(op.getCodigoIdentificador());
             solicitacao.setValorSaldoDevedorDePrincipal(op.getValorSaldoDevedor());
             solicitacao.setValorSaldoDeJurosNaNormalidade(op.getValorSaldoJuro());
             solicitacao.setValorEncargosMoratorios(op.getValorEncargo());
-            solicitacao.setAmortizacoesAteADataDaSolicitacaoDeHonra(amortizacao[0].setDataVencimento(op.getDataVencimento()));
-            for (int i = 0; i < operacoes.size(); i++) {
-                solicitacao.setAmortizacoesAteADataDaSolicitacaoDeHonra(amortizacao[i].setDataVencimento(op.getDataVencimento()));
-            }
-            
+            // solicitacao.setAmortizacoesAteADataDaSolicitacaoDeHonra(amortizacao);
+
             
         }
 

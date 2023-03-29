@@ -69,6 +69,14 @@ public class AmortizacaoEnvioDTO {
     public AmortizacaoEnvioDTO() {
     }
 
+    @Override
+    public String toString() {
+        return "[dataVencimento=" + dataVencimento + ", id=" + id + ", valorDevido=" + valorDevido
+                + ", valorRecebido=" + valorRecebido + ", valorRecebimentoInferiorAoDevido="
+                + valorRecebimentoInferiorAoDevido + ", versao=" + versao + "]";
+    }
+
+    
     
 
 }
