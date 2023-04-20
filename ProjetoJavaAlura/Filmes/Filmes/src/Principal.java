@@ -1,23 +1,26 @@
+import calculos.Classificavel;
+import calculos.FiltroRecomendacao;
 import models.Filme;
 import models.Serie;
-import models.Titulo;
+import calculos.CalculadoraDeTempo;
 
 public class Principal {
 
     public static void main(String[] args) {
 
         Filme filme = new Filme();
+        Filme filme2 = new Filme();
 
-        Titulo titulo = new Titulo();
+        Serie serie = new Serie();
+        Serie serie2 = new Serie();
 
-        titulo.setAnoDeLancamento(2922);
-        System.out.println(titulo.getAnoDeLancamento());
+        filme.avalia(10);
 
-        
+        System.out.println(filme.getClassificacao());
 
-        
- 
+        FiltroRecomendacao filtro = new FiltroRecomendacao();
 
+        filtro.filtra(filme);
 
 
     }
