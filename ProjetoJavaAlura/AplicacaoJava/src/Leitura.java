@@ -28,23 +28,39 @@ public class Leitura {
             switch (opcao) {
                 case 1:
                     System.out.println("Seu saldo é de: " + saldo);
-                    break;
+                    if (continuar()) {
+
+                        break;
+                    } else {
+                        opcao = 4;
+                        break;
+                    }
                 case 2:
                     System.out.println("Digite o valor recebido: ");
                     valorRecebido = sc.nextDouble();
                     saldo += valorRecebido;
                     System.out.println("Saldo atualizado: " + saldo);
-                    break;
+                    if (continuar()) {
+                        break;
+                    } else {
+                        opcao = 4;
+                        break;
+                    }
                 case 3:
                     System.out.println("Digite o valor que irá transferir: ");
                     valorTransferencia = sc.nextDouble();
-                    if(saldo > valorTransferencia){
+                    if (saldo > valorTransferencia) {
                         saldo -= valorTransferencia;
                         System.out.println("Saldo atualizado: " + saldo);
-                    }else{
+                    } else {
                         System.out.println("Valor para transferência maior que o seu saldo.");
                     }
-                    break;
+                    if (continuar()) {
+                        break;
+                    } else {
+                        opcao = 4;
+                        break;
+                    }
                 case 4:
                     break;
                 default:
@@ -55,6 +71,22 @@ public class Leitura {
 
         }
 
+    }
+
+    public static Boolean continuar() {
+        Scanner sc = new Scanner(System.in);
+        String desejaContinuar;
+        System.out.println("Deseja continuar? (s ou n) ");
+        desejaContinuar = sc.next();
+        switch (desejaContinuar.toLowerCase()) {
+            case "s":
+                return true;
+            case "n":
+                return false;
+            default:
+                System.out.println("Opção inválida!");
+                return false;
+        }
     }
 
 }
