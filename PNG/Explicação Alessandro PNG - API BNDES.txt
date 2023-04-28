@@ -22,3 +22,5 @@ TablesSpaces:  VE1 S1PNG040
 Pelo AD Intranet:
 Metadada de Modelos de Dados > PNG > 
 https://plataforma.atendimento.bb.com.br:49286/estatico/gaw/app/spas/index/index.app.html?app=aqtMetadados&cd_modo_uso=46&papp-termo=PNG#/
+
+https://plataforma.atendimento.bb.com.br:49286/estatico/gaw/app/spas/index/index.app.html?app=aqtMetadados&cd_modo_uso=46&papp-termo=PNG#/
