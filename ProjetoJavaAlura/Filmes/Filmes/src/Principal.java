@@ -2,7 +2,6 @@ import calculos.Classificavel;
 import calculos.FiltroRecomendacao;
 import models.Filme;
 import models.Serie;
-import calculos.CalculadoraDeTempo;
 
 public class Principal {
 
@@ -15,12 +14,18 @@ public class Principal {
         Serie serie2 = new Serie();
 
         filme.avalia(10);
+        filme.avalia(5);
 
+        System.out.println("Classificacao");
         System.out.println(filme.getClassificacao());
+
+        
 
         FiltroRecomendacao filtro = new FiltroRecomendacao();
 
+        System.out.println("Ranking: ");
         filtro.filtra(filme);
+
 
 
     }
