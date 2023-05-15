@@ -3,7 +3,6 @@ package models;
 import java.security.InvalidParameterException;
 
 public class Titulo {
-    
 
     private String nome;
     private int anoDeLancamento;
@@ -11,16 +10,22 @@ public class Titulo {
     private double somaDasAvaliacoes;
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
-    
-    public void exibeFichaTecnica(){
+
+    public Titulo(String nome, int anoDeLancamento){
+        this.setNome(nome);
+        this.setAnoDeLancamento(anoDeLancamento);
+        this.setIncluidoNoPlano(false);
+    }
+
+    public void exibeFichaTecnica() {
         System.out.println(nome);
         System.out.println(anoDeLancamento);
         System.out.println(pegaMedia());
 
     }
 
-    public void avalia(double nota){
-        if(nota > 10){
+    public void avalia(double nota) {
+        if (nota > 10) {
             System.out.println("Por favor informar uma nota menor que 10");
             throw new InvalidParameterException();
         }
@@ -28,7 +33,16 @@ public class Titulo {
         totalDeAvaliacoes++;
     }
 
-    public double pegaMedia(){
+    public void atualizarNome(String nome) {
+        if (nome.trim().equals(this.getNome().trim())) {
+            System.out.println("Não foi necessário atualizar, o nome é o mesmo.");
+        } else {
+            this.setNome(nome);
+            System.out.println("Nome do filme atualizado!\nNovo nome: " + nome);
+        }
+    }
+
+    public double pegaMedia() {
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
 
@@ -79,9 +93,12 @@ public class Titulo {
     public void setDuracaoEmMinutos(int duracaoEmMinutos) {
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
-    
-        
-    
 
+    @Override
+    public String toString() {
+        return "Titulo [nome=" + nome + ", anoDeLancamento=" + anoDeLancamento + ", incluidoNoPlano=" + incluidoNoPlano
+                + ", somaDasAvaliacoes=" + somaDasAvaliacoes + ", totalDeAvaliacoes=" + totalDeAvaliacoes
+                + ", duracaoEmMinutos=" + duracaoEmMinutos + "]";
+    }
 
 }
